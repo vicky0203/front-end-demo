@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+
+
+		#experiment{
+			border: 2px solid #ccc;
+			width: 1200px;
+			height: 600px;
+			padding: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -300px;
+			margin-left: -600px;
+
+            
+			-webkit-perspective: 800;
+			-webkit-perspective-origin: 50% 50%;
+
+		}
+
+		#stage{
+			width: 200px;
+			height: 200px;
+			margin: 200px auto;
+			padding: 0;
+
+			position: relative;
+
+			-webkit-transform-style:preserve-3d;
+
+			-webkit-transition:all 1s ease;
+
+			-webkit-animation:rotation 10s ease-in-out infinite;
+		}
+
+
+		.side{
+			width: 200px;
+			height: 200px;
+			background-color: black;
+			color: white;
+			font-size: 200px;
+			line-height: 200px;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			opacity: 0.5;
+
+			position: absolute; 
+
+			
+		}
+
+        /* 旋转中心在球心 */
+		#side1  {
+			-webkit-transform:translate3d(0,0,100px);
+        }
+        #side2 {
+            -webkit-transform:translate3d(50%,0,0) rotateY(-90deg);
+        } 
+        #side3 {
+            -webkit-transform:translate3d(0,0,-100px);
+        }
+        #side4 {
+             -webkit-transform:translate3d(-50%,0,0) rotateY(90deg);
+        }
+         #side5 {
+         	-webkit-transform:translate3d(0,-50%,0) rotateX(90deg);
+        } 
+         #side6 {
+            -webkit-transform:translate3d(0,50%,0) rotateX(-90deg);
+        }
+
+        @-webkit-keyframes rotation{
+            20%{ 
+                -webkit-transform: rotateY(45deg);
+            }
+            40%{ 
+            	-webkit-transform: rotateX(-45deg) rotateY(90deg);
+            }
+
+            60%{ 
+            	-webkit-transform: rotateX(-45deg) rotateY(90deg) rotateZ(-90deg);
+            }
+            80%{ 
+            	-webkit-transform: rotateX(-45deg) rotateY(90deg) rotateZ(0deg);
+            }
+        } 
+	</style>
+</head>
+<body>
+	<div id="experiment">
+	    <div id="stage">
+			<div id="side1" class="side">1</div>
+			<div id="side2" class="side">2</div>
+			<div id="side3" class="side">3</div>
+			<div id="side4" class="side">4</div>
+			<div id="side5" class="side">5</div>
+			<div id="side6" class="side">6</div>
+		</div>
+	</div>
+</body>
+</html>
