@@ -1,0 +1,29 @@
+
+/* ----------- featured clients */
+#client-images .client-item{
+	float: left;
+	margin: 0 10px;
+}
+
+#client-images .client-item img{
+	width: 200px;
+}
+
+/* ------------ back-to-top */
+#back-to-top .back-button{
+	float: right;
+	color: #27649d;
+}
+
+#back-to-top .back-button i{
+	margin-left: 10px;
+    font-size: 25px;
+}
+
+
+/* ------------ banner text */
+#banner-text{
+	overflow: hidden;
+	text-overflow: clip;
+	white-space:nowrap;
+}
