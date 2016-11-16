@@ -13,36 +13,54 @@
 }
 
 .header-wrap .menu{
-    float: right;
-    margin-right: 20px;
+	text-align: center;
 
     height: 50px;
     line-height: 50px;
-}
-
-.header-wrap .menu .menu-item{
-	margin-right: 20px;
 }
 
 .header-wrap .menu .menu-item i{
 	margin-right: 5px;
 }
 
+@media (min-width:680px){
+	.header-wrap .menu{
+		float: right;
+    	margin-right: 20px;
+
+    	text-align: left;
+	}
+
+	.header-wrap .menu .menu-item{
+		margin-right: 20px;
+	}
+}
+
 
 /* ------------ body */
 .container{
 	margin: 50px auto 0;
+	width: 100%;
+}
+
+.container-group{
+	text-align: center;
+}
+
+.section-container{
+	margin: 0;
+}
+
+@media (min-width: 680px) {
+	.container-group{
+		float: left;
+		text-align: left;
+	}
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
 }
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -53,23 +71,6 @@
   .container{
     width: 1280px;
   }
-}
-@media (min-width: 1550px){
-  .container{
-    width: 1530px;
-  }
-}
-
-.section-container-large{
-	padding: 10px 20px;
-}
-
-.section-container-small{
-	margin: 0 140px;
-}
-
-.container-group{
-	float: left;
 }
 
 .group-left{
@@ -83,7 +84,6 @@
 .group-item{
 	float: left;
 }
-
 
 
 /* ------------ footer */
@@ -197,7 +197,7 @@
 
 /* ---------------- big CTA button */
 .cta-button{ 
-	width: 230px;
+	width: 180px;
 	background-color: #8d8c8b;
 	padding: 10px 20px;
 
