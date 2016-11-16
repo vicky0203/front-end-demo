@@ -2,12 +2,14 @@
 
 .header-wrap{
 	width: 100%;
-	/* height: 50px; */ 
+	box-shadow: 0 1px 10px #000;
 
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
+
+	z-index: 99;
 }
 
 .header-wrap .menu{
@@ -30,11 +32,56 @@
 /* ------------ body */
 .container{
 	margin: 50px auto 0;
-	width: 1360px;
 }
 
-.section-container{
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1300px){
+  .container{
+    width: 1280px;
+  }
+}
+@media (min-width: 1550px){
+  .container{
+    width: 1530px;
+  }
+}
+
+.section-container-large{
 	padding: 10px 20px;
+}
+
+.section-container-small{
+	margin: 30px 140px;
+}
+
+.container-group{
+	float: left;
+}
+
+.group-left{
+
+}
+
+.group-right{
+	float: right;
+}
+
+.group-item{
+	float: left;
 }
 
 
@@ -42,10 +89,59 @@
 /* ------------ footer */
 .footer-wrap{
 	width: 100%;
+	box-shadow: 0 -1px 10px #000;
+	z-index: 99;
+}
+
+#footer-detail{
+	padding: 40px 100px;
+}
+
+#footer-detail .logo img{
+	width: 150px;
+}
+
+#footer-detail .sitemap-detail{
+	margin-left: 200px;
+
+	font-size: 14px;
+}
+
+#footer-detail .sitemap-detail a.item{
+	display: block;
+	margin-top: 5px;
+}
+
+#footer-detail .get-in-touch{
+	margin-right: 100px;
+} 
+
+#footer-detail .get-in-touch h2.title{
+	margin-top: 0;
+}
+
+#footer-detail .get-in-touch .contact{
+	font-size: 14px;
+}
+
+#footer-detail .get-in-touch .contact-item{
+	margin-bottom: 10px;
+}
+
+#footer-detail .get-in-touch .contact .name{
+	margin-right: 50px;
+
+	font-weight: bolder;
+}
+
+#footer-detail .get-in-touch .contact .number{
+	float: right;
 }
 
 
-.footer-simple{
+
+
+#footer-simple{
 	background-color: #000;
 	color: #fff;
 
@@ -53,21 +149,21 @@
 	padding: 20px 0;
 }
 
-.sitemap{
+#footer-simple .sitemap-simple{
 	float: left;
 	margin-left: 100px;
 
-	font-size: 20px;
+	font-size: 14px;
 	font-weight: bolder;
     height: 30px;
     line-height: 30px;
 }
 
-.sitemap .copy-right{
+#footer-simple .sitemap-simple .copy-right{
 	margin-right: 50px;
 }
 
-.sitemap .item{
+#footer-simple .sitemap-simple .item{
 	text-decoration: none;
 	display: inline-block;
 
@@ -75,29 +171,62 @@
     padding: 0 20px;
 }
 
-.sitemap .item:last-child{
+#footer-simple .sitemap-simple .item:last-child{
 	border: none;
 }
 
-.contact-medias{
+#footer-simple .contact-medias{
 	float: right;
 	margin-right: 100px;
 }
 
-.contact-medias a{
+#footer-simple .contact-medias a{
 	display: inline-block;
 }
 
-.contact-medias i{
-	font-size: 25px;
-    width: 25px;
-    height: 25px;
+#footer-simple .contact-medias i{
+	font-size: 20px;
+    width: 20px;
+    height: 20px;
     text-align: center;
     padding: 5px;
     border-radius: 8px;
     border: 2px solid #27649d;
 }
 
+
+/* ---------------- big CTA button */
+.cta-button{ 
+	width: 230px;
+	background-color: #8d8c8b;
+	padding: 20px;
+
+	border: 2px solid #5a5958;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 5px #000;
+    -moz-box-shadow: 2px 2px 5px #000;
+    box-shadow: 2px 2px 5px #000;
+
+    color: white;
+    text-align: center;
+
+    cursor: pointer;
+
+}
+
+.cta-button .button-title{
+	margin-top: 0;
+}
+
+.cta-button .button-content{
+	font-size: 14px;
+}
+
+.cta-button:hover{
+	-webkit-box-shadow: 0px 0px 10px #ccc;
+	-moz-box-shadow: 0px 0px 10px #ccc;
+	box-shadow: 0px 0px 10px #ccc;
+}
 
 /* -------------- common */
 a, a:link {
