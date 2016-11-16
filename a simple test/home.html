@@ -52,7 +52,52 @@
 			</div>
 		</section>
 		<section id="actions">
-			<div class="actions-wrap section-container-small">B</div>
+			<ul class="actions-wrap section-container-small carousel clearfloat">
+				<li class="carousel-item on clearfloat">
+					<div class="action-image container-group group-left">
+						<img src="image/carousel-1.jpg" alt="">
+					</div>
+					<div class="call-to-action container-group group-right clearfloat">
+						<h1 class="action-title">Call to Action 1</h1>
+						<p>Marketing Message Text 1</p>
+						<div class="cta-button">
+							<h2 class="button-title">Get Started</h2>
+							<div class="button-content">Solutions starting at just $xyz</div>
+						</div>
+				    </div>
+				</li>
+				<li class="carousel-item clearfloat">
+					<div class="action-image container-group group-left">
+						<img src="image/carousel-2.jpg" alt="">
+					</div>
+					<div class="call-to-action container-group group-right">
+						<h1 class="action-title">Call to Action 2</h1>
+						<p>Marketing Message Text 2</p>
+						<div class="cta-button group-item">
+							<h2 class="button-title">Get Started</h2>
+							<div class="button-content">Solutions starting at just $xyz</div>
+						</div>
+				    </div>
+				</li>
+				<li class="carousel-item clearfloat">
+					<div class="action-image container-group group-left">
+						<img src="image/carousel-3.jpg" alt="">
+					</div>
+					<div class="call-to-action container-group group-right">
+						<h1 class="action-title">Call to Action 3</h1>
+						<p>Marketing Message Text 3</p>
+						<div class="cta-button group-item">
+							<h2 class="button-title">Get Started</h2>
+							<div class="button-content">Solutions starting at just $xyz</div>
+						</div>
+				    </div>
+				</li>
+				<ul class="carousel-index">
+    			    <li value="0" class="on"></li>
+        			<li value="1"></li>
+        			<li value="2"></li>
+	        	</ul>
+			</ul>
 		</section>
 		<section id="how-it-works">
 			<div class="how-it-works-wrap light-gray-bg section-container-small clearfloat">
@@ -69,7 +114,7 @@
 					<div class="how-others-item">
 						<h2 class="others-title"><i class="fa fa-file-pdf-o book-icon" aria-hidden="true"></i>Read Our Book</h2>
 						<p class="other-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde rem, at beatae tenetur non reprehenderit, nemo repellat asperiores autem.</p>
-						<p><a href="document/Ebook.pdf" download="Download the free PDF today">Download the free PDF today</a></p>
+						<p><i class="fa fa-download" aria-hidden="true"></i> <a href="document/Ebook.pdf" download="Download the free PDF today">Download the free PDF today</a></p>
 					</div>
 				</div>
 			</div>
@@ -166,7 +211,7 @@
 		</div>
 	</footer>
 	<div id="get-started-modal" class="modal">
-		<div class="form-wrap">
+		<div id="form-wrap" class="modal-item">
 			<i class="fa fa-window-close-o" id="close-button" aria-hidden="true"></i>
 			<h3 class="form-title">Free Consultation</h3>
 			<p class="form-des">Find out what XYZ Inc. can do for your business.</p>
@@ -183,6 +228,11 @@
 				</select>
 				<div class="small-button" id="submit-button">Submit</div>
 			</form>
+		</div>
+		<div id="after-submit" class="modal-item">
+			<h1>Message submitted successfully!</h1>
+			<p>Thank you for your support, we will contact you as soon as possible!</p>
+			<p class="count-down">Window will be closed in <strong><span id="count-number">3</span></strong> minutes</p>
 		</div>
 	</div>
 
