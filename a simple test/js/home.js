@@ -5,6 +5,11 @@ var current = 0;
 var playvideo = false;
 
 $(document).ready(function(){
+	//dropdown menu for mobile
+	$("#services-menu").hover(function(){
+		$("#service-menu .services-dropdown").show();
+	});
+
 	//imgs carousel
     $(".carousel .carousel-index li").click(function(){
         var i = $(this).val();

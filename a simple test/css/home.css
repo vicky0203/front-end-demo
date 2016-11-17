@@ -41,6 +41,7 @@
 
 #intro #services-menu .services-dropdown{
 	display: none;
+	z-index: 10;
 
 	position: absolute;
 	top: 6px;
@@ -53,7 +54,6 @@
 
 #intro #services-menu:hover .services-dropdown{
 	display: block;
-	z-index: 10;
 }
 
 
