@@ -78,16 +78,19 @@
     font-weight: bolder;
 }
 
-@media (min-width:768px){
-	display:block;
+@media (min-width:760px){
+	#intro .intro-wrap{
+		display:block;
+	}
+	
 }
 
 /* --------------- antions */
 #actions .actions-wrap{
-	padding: 0;
+	padding-bottom: 30px;
 
 	position: relative;
-	height: 400px;
+	height: 360px;
 }
 
 #actions li.carousel-item{
@@ -100,7 +103,7 @@
     bottom: 0;
 
     background-color: #2b78e4;
-    padding: 10px 50px;
+    padding: 10px 0;
 
     display: none;
 }
@@ -110,18 +113,18 @@
 }
 
 #actions li.carousel-item .action-image{
-	margin: 0 auto;
+	margin: 10px auto;
     text-align: center;
     width: 100%;
 }
 
 
 #actions li.carousel-item .action-image img{
-	width: 350px;
+	width: 280px;
 }
 
 #actions .call-to-action{
-	margin: 20px 10px;
+	margin: 20px 0;
 	float: none;
 	text-align: center;
 }
@@ -134,12 +137,28 @@
 	display: none;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 330px){
+	#actions li.carousel-item .action-image img{
+		width: 340px;
+	} 
+}
+
+
+
+@media (min-width: 760px) {
+	#actions .actions-wrap{
+		padding: 0;
+	}
 
 	#actions .call-to-action{
 		width: 200px;
 		float: right;
 		text-align: left;
+		margin: 20px 10px;
+	}
+
+	#actions li.carousel-item{
+		padding: 10px 50px;
 	}
 
 	#actions li.carousel-item .action-image{
@@ -148,7 +167,7 @@
 	}
 
 	#actions li.carousel-item .action-image img{
-		width: 300px;
+		width: 360px;
 	}
 
 	#actions .call-to-action .cta-button{
@@ -158,13 +177,7 @@
 		display: block;
 	}
 
-}
-
-@media (min-width: 768px) {
-	#actions li.carousel-item .action-image{
-	   margin: 50px 20px; 
-    }
-}
+} 
 
 @media(min-width: 800px){
 	#actions .call-to-action{
@@ -221,7 +234,7 @@
 
 /* --------------- how it works */
 #how-it-works .how-it-works-wrap{
-	padding: 10px 50px;
+	padding: 10px 10px;
 }
 #how-it-works .how-video{
 	text-align: center;
@@ -233,7 +246,8 @@
 	border: 1px solid #000;
     background: white;
 
-    width: 90%;
+    width: 100%;
+    height: 300px;
 }
 
 #how-it-works .how-others{
@@ -269,7 +283,7 @@
     cursor: pointer;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 760px) { 
 	#how-it-works .how-others{
 	    width: 55%;
 	    margin-top: 20px;
@@ -277,17 +291,21 @@
 
 	#how-it-works .how-video{
 		margin-bottom: 0;
-		margin-top: 100px;
+		margin-top: 50px;
 		width: auto;
 	}
 
 	#how-it-works .how-video video{
 		width: 300px;
-    	height: 200px;
+    	height: 250px;
 	}
 }
 
 @media (min-width: 992px) {
+	#how-it-works .how-it-works-wrap{
+		padding: 10px 50px;
+	}
+
 	#how-it-works .how-video{
 		margin-top: 0;
 	}
@@ -336,20 +354,76 @@
 
 
 /* ----------- featured clients */
+#featured-clients .featured-clients-wrap{
+	margin:50px auto;
+}
+
 #featured-clients h2.title{
 	text-align: center;
 }
-#client-images{
-	width: 90%;
-    margin: 0 auto;
-}
 
+#client-images .group-left, #client-images .group-right{
+	float: none;
+	text-align: center;
+}
+ 
 #client-images .client-item{
-	margin: 0 10px;
+	margin: 0 3px;
+	float: none;
+	display: inline-block;
 }
 
 #client-images .client-item img{
-	width: 200px;
+	width: 100px;
+}
+
+@media(min-width: 450px){
+	#client-images .client-item img{
+		width: 130px;
+	}
+}
+
+@media(min-width: 540px){
+	#client-images .client-item img{
+		width: 160px;
+	}
+
+}
+
+@media(min-width: 960px){
+	#client-images .group-left{
+		float: left;
+	}
+
+	#client-images .group-right{
+		float: right;
+	}
+
+	#client-images .client-item{
+		float: left;
+	}
+
+	#client-images .client-item img{
+		width: 150px;
+	}
+}
+
+@media(min-width: 1020px){
+	#client-images .client-item img{
+		width: 160px;
+	}
+}
+
+@media (min-width: 1160px){
+	#client-images .client-item img{
+		width: 180px;
+	}
+}
+
+@media (min-width: 1300px){
+	#client-images .client-item img{
+		width: 200px;
+	}
 }
 
 /* ------------ back-to-top */

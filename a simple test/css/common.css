@@ -51,32 +51,6 @@
 	margin: 0;
 }
 
-@media (min-width: 680px) {
-	.container-group{
-		float: left;
-		text-align: left;
-	}
-}
-
-@media (min-width: 768px) {
-}
-@media (min-width: 992px) {
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-@media (min-width: 1300px){
-  .container{
-    width: 1280px;
-  }
-}
-
-.group-left{
-
-}
-
 .group-right{
 	float: right;
 }
@@ -85,6 +59,27 @@
 	float: left;
 }
 
+@media (min-width: 760px) {
+	.container-group{
+		text-align: left;
+	}
+
+	.group-left{
+		float: left;
+	}
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+     width: 1170px;
+  }
+}
+@media (min-width: 1300px){
+  .container{
+    width: 1280px;
+  }
+}
 
 /* ------------ footer */
 .footer-wrap{
@@ -150,17 +145,20 @@
 }
 
 #footer-simple .sitemap-simple{
-	float: left;
-	margin-left: 100px;
-
 	font-size: 14px;
 	font-weight: bolder;
-    height: 30px;
     line-height: 30px;
+
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 #footer-simple .sitemap-simple .copy-right{
-	margin-right: 50px;
+	margin-right: 10px;
+}
+
+#footer-simple .sitemap-simple .sitemap-links{
+	margin: 5px 0; 
 }
 
 #footer-simple .sitemap-simple .item{
@@ -168,7 +166,7 @@
 	display: inline-block;
 
     border-right: 1px solid #fff;
-    padding: 0 20px;
+    padding: 0 5px;
 }
 
 #footer-simple .sitemap-simple .item:last-child{
@@ -176,8 +174,7 @@
 }
 
 #footer-simple .contact-medias{
-	float: right;
-	margin-right: 100px;
+	text-align: center;
 }
 
 #footer-simple .contact-medias a{
@@ -194,6 +191,43 @@
     border: 2px solid #27649d;
 }
 
+@media(min-width: 420px){
+	#footer-simple .sitemap-simple{
+		height: 30px;
+	}
+	#footer-simple .sitemap-simple .sitemap-links{
+		margin: 0; 
+		display: inline-block;
+	}
+
+	#footer-simple .sitemap-simple .copy-right{
+		margin-right: 10px;
+		display: inline-block;
+	}
+}
+
+@media(min-width: 960px){
+	#footer-simple .sitemap-simple{
+		float: left;
+		margin-left: 100px;
+		margin-bottom: 0;
+	}
+
+	#footer-simple .contact-medias{
+		float: right;
+		margin-right: 100px;
+	}
+
+	#footer-simple .sitemap-simple .item{
+		padding: 0 20px;
+	}
+}
+
+@media(min-width: 1200px){
+	#footer-simple .sitemap-simple .copy-right{
+		margin-right: 50px;
+	}
+}
 
 /* ---------------- big CTA button */
 .cta-button{ 
