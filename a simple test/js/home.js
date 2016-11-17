@@ -7,7 +7,7 @@ var playvideo = false;
 $(document).ready(function(){
 	//dropdown menu for mobile
 	$("#services-menu").hover(function(){
-		$("#service-menu .services-dropdown").show();
+		$("#service-menu .services-dropdown").toggle();
 	});
 
 	//imgs carousel
