@@ -19,11 +19,18 @@
     line-height: 50px;
 }
 
-.header-wrap .menu .menu-item i{
+.header-wrap .menu .menu-icon{
 	margin-right: 5px;
+	display: none;
 }
 
-@media (min-width:680px){
+@media (min-width:420px){
+	.header-wrap .menu .menu-icon{
+		display: inline;
+	}
+}
+
+@media (min-width:640px){
 	.header-wrap .menu{
 		float: right;
     	margin-right: 20px;
@@ -34,6 +41,10 @@
 	.header-wrap .menu .menu-item{
 		margin-right: 20px;
 	}
+}
+
+
+@media (min-width: 760px){
 }
 
 
@@ -89,26 +100,45 @@
 }
 
 #footer-detail{
-	padding: 40px 100px;
+	padding: 40px 20px;
+}
+
+#footer-detail .footer-detail-left{
+	margin-left: 0px;
+	margin-bottom: 50px; 
+}
+
+#footer-detail .footer-detail-right{
+	margin-right: 0px;
+}
+
+#footer-detail .footer-detail-right.group-right{
+	float: none;
+}
+
+#footer-detail .footer-detail-right .group-item{
+	float: none;
+    display: inline-block;
+}
+
+#footer-detail .logo.group-item, #footer-detail .sitemap-detail.group-item{
+	float: none;
 }
 
 #footer-detail .logo img{
-	width: 150px;
+	width: 120px;
 }
 
 #footer-detail .sitemap-detail{
-	margin-left: 200px;
-
 	font-size: 14px;
 }
 
 #footer-detail .sitemap-detail a.item{
-	display: block;
-	margin-top: 5px;
+	margin: 0 5px; 
 }
 
 #footer-detail .get-in-touch{
-	margin-right: 100px;
+	margin-right: 30px;
 } 
 
 #footer-detail .get-in-touch h2.title{
@@ -131,6 +161,93 @@
 
 #footer-detail .get-in-touch .contact .number{
 	float: right;
+}
+
+#footer-detail .cta-button.group-item{
+	padding: 5px;
+	display: none;
+}
+
+@media(min-width: 768px){
+	#footer-detail .logo.group-item, #footer-detail .sitemap-detail.group-item{
+		float: left;
+	}
+
+	#footer-detail .sitemap-detail{
+		margin-left: 20px;
+	}
+
+	#footer-detail .sitemap-detail a.item{
+		display: block;
+		margin: 5px 0;
+	}
+
+	#footer-detail .footer-detail-left{
+		margin-bottom: 0px; 
+	}
+
+	#footer-detail .footer-detail-right.group-right{
+		float: right;
+	}
+
+	#footer-detail .footer-detail-right .group-item{
+		float: left;
+	    display: block;
+	}
+
+	#footer-detail .cta-button{
+		display: block;
+	}
+}
+
+
+@media(min-width: 992px){
+	#footer-detail{
+		padding: 40px 50px;
+	}
+
+	#footer-detail .logo img{
+		width: 150px;
+	}
+
+	#footer-detail .sitemap-detail{
+		margin-left: 50px;
+	}
+
+	#footer-detail .cta-button{
+		padding: 10px 20px;
+	}
+}
+
+
+
+@media(min-width: 1280px){
+
+	#footer-detail{
+		padding: 40px 100px;
+	}
+
+	#footer-detail .get-in-touch{
+		margin-right: 100px;
+	} 
+
+	#footer-detail .footer-detail-left{
+		margin-left: 100px;
+	}
+
+	#footer-detail .footer-detail-right{
+		margin-right: 100px;
+	}
+}
+
+@media(min-width: 1540px){
+	#footer-detail .footer-detail-left{
+		margin-left: 300px;
+	}
+
+	#footer-detail .footer-detail-right{
+		margin-right: 300px;
+	}
 }
 
 

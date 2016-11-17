@@ -21,13 +21,13 @@ $(document).ready(function(){
         previous = current;
     }); 
 
-    // var timer = setInterval(autoShowImage, 3000);
+    var timer = setInterval(autoShowImage, 3000);
 
-    // $(".carousel .carousel-index, .carousel .carousel-item").hover(function(){
-    //     clearInterval(timer);
-    // },function(){
-    //     timer = setInterval(autoShowImage, 3000);
-    // });
+    $(".carousel .carousel-index, .carousel .carousel-item").hover(function(){
+        clearInterval(timer);
+    },function(){
+        timer = setInterval(autoShowImage, 3000);
+    });
 
     //back to top
     $(".back-button").click(function(){ 
@@ -51,7 +51,7 @@ $(document).ready(function(){
     });
 
     //modal
-    $("#get-started-modal-button").click(function(){
+    $(".get-started-modal-button").click(function(){
 		$("#get-started-modal").show();
 	});
 

@@ -123,6 +123,37 @@
 	width: 280px;
 }
 
+#actions .carousel-index{ 
+	width: 100%;
+	text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+#actions .carousel-index li{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #999;
+	margin-right: 5px;
+
+	-moz-box-shadow:0px 2px 3px #6E6E6E; 
+    -webkit-box-shadow:0px 2px 3px #6E6E6E; 
+    box-shadow:0px 2px 3px #6E6E6E; 
+
+    cursor: pointer;
+}
+
+#actions .carousel-index li.on{
+	background: #fff;
+}
+ 
+
 #actions .call-to-action{
 	margin: 20px 0;
 	float: none;
@@ -137,12 +168,22 @@
 	display: none;
 }
 
+
 @media (min-width: 330px){
 	#actions li.carousel-item .action-image img{
 		width: 340px;
 	} 
+
+	#actions .actions-wrap{
+		padding-bottom: 70px;
+	}
 }
 
+@media (min-width: 420px){
+	#actions .carousel-item .get-started-modal-button{
+		display: none;
+	}
+}
 
 
 @media (min-width: 760px) {
@@ -199,35 +240,6 @@
 	}
 }
 
-#actions .carousel-index{ 
-	width: 100%;
-	text-align: center;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 10;
-    padding-left: 0;
-    margin-bottom: 20px;
-}
-
-#actions .carousel-index li{
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	border-radius: 10px;
-	background: #999;
-	margin-right: 5px;
-
-	-moz-box-shadow:0px 2px 3px #6E6E6E; 
-    -webkit-box-shadow:0px 2px 3px #6E6E6E; 
-    box-shadow:0px 2px 3px #6E6E6E; 
-
-    cursor: pointer;
-}
-
-#actions .carousel-index li.on{
-	background: #fff;
-}
 
 
 
@@ -330,8 +342,14 @@
     background: #ddd;
     border: 2px solid #000;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     float: none;
+}
+
+@media (min-width: 860px) {
+	#detail .detail-item{
+		padding: 20px;
+	}
 }
 
 @media (min-width: 860px) {
@@ -374,7 +392,7 @@
 }
 
 #client-images .client-item img{
-	width: 100px;
+	width: 90px;
 }
 
 @media(min-width: 450px){
@@ -482,10 +500,9 @@
 }
 
 #get-started-modal .modal-item{
-	width: 300px;
-    margin: 100px auto;
     background-color: white;
     padding: 20px;
+	height: 100%;
 
     border: 2px solid #000;
     border-radius: 10px;
@@ -522,10 +539,18 @@
     text-align: center;
 }
 
-#get-started-modal .after-submit{
+#get-started-modal #after-submit{
 	display: none;
 }
 
 #get-started-modal #count-number{
 	color: #27649d;
+}
+
+@media (min-width: 420px){
+	#get-started-modal .modal-item{
+		width: 300px;
+		height: auto;
+	    margin: 100px auto;
+	}
 }
